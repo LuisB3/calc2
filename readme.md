@@ -1,6 +1,7 @@
 # Calculator Project Setup
 [![Build Status](https://app.travis-ci.com/kaw393939/calc2.svg?branch=main)](https://app.travis-ci.com/kaw393939/calc2)
 
+Travis Badge: https://app.travis-ci.com/LuisB3/calc2.svg?branch=main
 Run Pip Install
 pip install -r requirements.txt
 
