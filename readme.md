@@ -3,6 +3,9 @@
 
 Travis Badge: https://app.travis-ci.com/LuisB3/calc2.svg?branch=main
 
+[![Build Status](https://app.travis-ci.com/LuisB3/calc2.svg?branch=main)](https://app.travis-ci.com/LuisB3/calc2)
+
+
 Run Pip Install
 pip install -r requirements.txt
 
