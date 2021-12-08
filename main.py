@@ -1,17 +1,18 @@
+"""This is my calculator program"""
+#Main calculator program
 import glob
 import pathlib
 import os
 import pandas as pd
 import time
 
-
 from calc.calculator import Calculator
-
 cwd = os.getcwd()  #Get folder
 files = os.listdir(cwd)  #Get files
 print("Files in %r: %s" % (cwd, files)) #Print
 
 def process(files):
+    """processing"""
     for file in files:
         basename = os.path.basename(file)
 
@@ -30,7 +31,6 @@ def process(files):
             with open(f"outputs/{basename}", "w") as fp:
                 df.to_csv(fp)
 
-
         if basename == "subtraction.csv":
             print("Processing Subtraction CSV")
             df = pd.read_csv(file)
@@ -46,7 +46,6 @@ def process(files):
             df["result"] = results_arr
             with open(f"outputs/{basename}", "w") as fp:
                 df.to_csv(fp)
-
 
         if basename == "multiplication.csv":
             print("multiply")
@@ -92,11 +91,10 @@ def process(files):
             with open(f"outputs/{basename}", "w") as fp:
                 df.to_csv(fp)
 
-
     return 0
 
-
 def main():
+    """printing"""
     path = pathlib.Path(__file__).parent / "inputs"
     # print ("path: " + str(path))
     files = glob.glob(str(path) + "/*")
@@ -109,8 +107,6 @@ def main():
             files_len = done
         else:
             print("Running...", end="\r")
-
         return True
-
 
 main()
