@@ -1,5 +1,5 @@
 # Flash Setup
-![image](https://user-images.githubusercontent.com/522095/145236134-07ac5bbe-243e-4bb5-9f60-26a4931d62f3.png)
+![image](https://user-images.githubusercontent.com/522095/145280927-217118dd-26f7-43af-9264-21b44613d03e.png)
 
 Run Pip Install
 pip install -r requirements.txt
