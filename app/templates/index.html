@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Index{% endblock %}
+{% block title %}Welcome{% endblock %}
 {% block head %}
     {{ super() }}
     <style type="text/css">
@@ -7,11 +7,11 @@
     </style>
 {% endblock %}
 {% block content %}
-    <h1>Index</h1>
+    <h1>Welcome</h1>
     <p class="important">
-      Welcome to my awesome homepage.
+      This is Lou's homepage.
         <img src="{{ url_for('static', filename='images/sample.jpeg') }}">
     </p>
 
-<a href="/good/1.0/2.0">One Plus Two Good</a><br><a href="/bad/1/2">One Plus Two Bad</a>
+<a href="/good/1.0/2.0">One Plus Two Equals Three = Good</a><br><a href="/bad/1/2">One Plus Two Equals Four = Bad</a>
 {% endblock %}

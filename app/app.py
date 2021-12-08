@@ -1,6 +1,7 @@
 """A simple flask web app"""
 from flask import Flask, request
 from flask import render_template
+from flask import Flask, render_template, flash
 from calc.calculator import Calculator
 app = Flask(__name__)
 
@@ -42,3 +43,10 @@ def good_calc(value1,value2):
     Calculator.addition(my_tuple)
     response = "The result of the calculation is: " + str(Calculator.get_last_result_value()) + '<a href="/"> back</a>'
     return response
+
+@app.route('/dashboard/')
+def dashboard():
+    flash("flash test!!!!")
+    flash("flash test again!!!!")
+    flash("flash test one more time!!!!")
+    return render_template("dashboard.html", TOPIC_DICT = TOPIC_DICT)
