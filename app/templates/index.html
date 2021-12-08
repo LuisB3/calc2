@@ -9,9 +9,10 @@
 {% block content %}
     <h1>Welcome</h1>
     <p class="important">
-      This is Lou's homepage.
+      This is Lou's homepage.</p>
+    <p>
         <img src="{{ url_for('static', filename='images/flask.png') }}">
     </p>
 
-<a href="/good/1.0/2.0">One Plus Two Equals Three = Good</a><br><a href="/bad/1/2">One Plus Two Equals Four = Bad</a>
+<a href="/good/1.0/2.0">One Plus Two Equals Good</a><br><a href="/bad/1/2">One Plus Two Equals Bad</a>
 {% endblock %}
