@@ -1,6 +1,5 @@
 # Flash Setup
-![image](https://user-images.githubusercontent.com/522095/145405726-60099131-88d7-4119-b207-8e7464f892f1.png)
-![image](https://user-images.githubusercontent.com/522095/145405907-8ae9116e-bca7-48da-9085-b44cfcfb06b2.png)
+![image](https://user-images.githubusercontent.com/522095/145409658-e8ea47e2-d3da-421b-9b29-166ed579b165.png)
 
 
 Run Pip Install
