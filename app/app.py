@@ -22,12 +22,11 @@ def basicform():
         my_tuple = (value1, value2)
         #this will call the correct operation
         getattr(Calculator, operation)(my_tuple)
-        result = str(Calculator.get_last_result_value())
+        result = str(Calculator.get_result_of_last_calculation_added_to_history())
         return render_template('result.html',value1=value1, value2=value2, operation=operation, result=result)
     # Displays the form because if it isn't a post it is a get request
     else:
         return render_template('basicform.html')
-
 
 @app.route("/bad/<value1>/<value2>")
 def bad_calc(value1,value2):
@@ -39,9 +38,8 @@ def bad_calc(value1,value2):
 @app.route("/good/<float:value1>/<float:value2>")
 def good_calc(value1,value2):
     """good calc Route Response"""
-    my_tuple = (value1,value2)
-    Calculator.addition(my_tuple)
-    response = "The result of the calculation is: " + str(Calculator.get_last_result_value()) + '<a href="/"> back</a>'
+    Calculator.add_number(value1,value2)
+    response = "The result of the calculation is: " + str(Calculator.get_result_of_last_calculation_added_to_history()) + '<a href="/"> back</a>'
     return response
 
 @app.route('/dashboard/')
